@@ -5,7 +5,7 @@ let HtmlPlugin = require('html-webpack-plugin');
 
 let dllConfig = {
     entry: {
-        lib: [path.resolve(__dirname, '../src/polyfills.ts')],
+        lib: [path.resolve(__dirname, '../src/polyfills.ts'),path.resolve(__dirname, '../src/vendors.ts')],
     },
     output: {
         path: path.resolve(__dirname, '../build/dll'),

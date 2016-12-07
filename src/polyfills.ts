@@ -18,15 +18,8 @@ import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';
 
-// Angular 2
-import '@angular/platform-browser';
-import '@angular/platform-browser-dynamic';
-import '@angular/core';
-import '@angular/common';
-import '@angular/forms';
-import '@angular/http';
-import '@angular/router';
- 
+
+import 'bootstrap/dist/css/bootstrap.css'; 
 
 // import 'rxjs/add/operator/map';
 // import 'rxjs/add/operator/switchMap';

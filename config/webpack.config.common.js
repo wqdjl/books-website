@@ -6,7 +6,7 @@ let config = {
     entry: {
         app: path.resolve(__dirname, '../src/app/main.ts'),
         polyfills: path.resolve(__dirname, '../src/polyfills.ts'),
-        //vendors:path.resolve(__dirname, '../src/vendors.ts'),
+        vendors:path.resolve(__dirname, '../src/vendors.ts'),
     },
     module: {
         loaders: [
@@ -30,7 +30,7 @@ let config = {
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|ico)$/,
-                loader: 'url?limit=10240&name=assets/[name].[hash].[ext]'
+                loader: 'url?limit=8192&name=assets/[name].[hash].[ext]'
             }
 
         ]
