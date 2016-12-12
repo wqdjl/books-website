@@ -3,10 +3,13 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
     template: `
-        <h1>Hello world!</h1>
+         <my-header></my-header>
+        <router-outlet>
+        </router-outlet>
+         <my-footer></my-footer>
     `
 })
-export class HelloComponent {
+export class AppComponent {
     constructor() {
         
     }

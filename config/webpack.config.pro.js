@@ -11,6 +11,11 @@ let proConfig={
         path:path.resolve(__dirname,'../build')
     },
     plugins:[
+        new webpack.DefinePlugin({
+            'process.env':{
+                dev:false
+            }
+        }),
         new webpack.DllReferencePlugin({
             context:__dirname,
             manifest: require(path.resolve(__dirname, '../temp/manifest.json'))
